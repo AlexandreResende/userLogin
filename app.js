@@ -11,6 +11,7 @@ const multer = require('multer');
 const upload = multer({dest: './uploads'});
 const flash = require('connect-flash');
 const expressValidator = require('express-validator');
+const bcrypt = require('bcryptjs');
 const mongodb = require('mongodb');
 const mongoose = require('mongoose');
 const db = mongoose.conection;
