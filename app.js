@@ -66,4 +66,8 @@ app
   res.render('error');
 });
 
+app.get('*', (req, res, next) => {
+  res.locals.user = req.user || null;
+});
+
 module.exports = app;
